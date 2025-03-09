@@ -1,0 +1,345 @@
+/* Reset ,colors and some default classes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid  red; */
+    /* background-color: #f2f4f7; */
+}
+
+:root {
+    --lightblue-btn: #38a7fc;
+    --blue-color: #088ef4;
+    --gray-text: rgb(97, 93, 93);
+    --top-banner: rgb(80, 151, 227);
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.fit {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+a:hover {
+    color: var(--lightblue-btn);
+    transition: 0.2s ease-out;
+}
+
+.primary-btn {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 1.3rem;
+
+    font-family: "Happy Monkey", serif;
+
+}
+
+.primary-btn:hover {
+    color: var(--lightblue-btn);
+    transition: ease-out 0.2s;
+    border-color: var(--lightblue-btn);
+
+}
+
+.secondary-btn {
+
+    font-family: "Happy Monkey", serif;
+
+    box-shadow: 0px 0px 1.5px var(--lightblue-btn);
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--lightblue-btn);
+}
+
+.secondary-btn:hover {
+    box-shadow: none;
+    color: white;
+    background-color: var(--blue-color);
+    transition: 0.2s ease-out;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-family:  serif;
+    color: var(--gray-text);
+}
+
+h1,
+h2,
+h3 {
+
+    font-family: "Poppins", serif;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 490;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 450;
+}
+
+/* Some custom classes */
+
+.top-banner {
+    background-image: url('./images/bgicons.png');
+    background-repeat: repeat;
+    background-size: 320px;
+    background-color: var(--top-banner);
+    padding-block: 10px;
+    text-align: center;
+}
+
+.top-banner p {
+    color: white;
+    font-weight: 600;
+}
+
+/* header */
+
+.header {
+    justify-content: space-between;
+    margin-block: 10px;
+    align-items: center;
+
+}
+
+.header .header-left img {
+    max-width: 100%;
+    height: 40px;
+}
+
+.header .header-right ul {
+    gap: 30px;
+    font-family: serif;
+}
+
+.bars {
+    display: none;
+}
+
+/* Hero Section */
+
+.hero-section {
+    margin-block: 20px;
+    gap: 30px;
+    align-items: flex-start;
+}
+.hero-section .hero-text{
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero-section .hero-text .secondary-btn {
+    margin: 0px 5rem;
+    width : 40%;
+    text-align: center;
+
+}
+
+.hero-section .hero-pic img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Companies Section */
+
+.company-section p {
+    font-weight: 800;
+    text-align: center;
+}
+
+.company-section .some-logos {
+    justify-content: space-evenly;
+    margin-block: 20px;
+}
+
+.company-section .some-logos img {
+    height: 50px;
+    width: auto;
+}
+
+/* Six cards */
+
+.six-cards-heading {
+    text-align: center;
+}
+
+.six-cards .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-block: 20px;
+}
+
+.six-cards .cards .card-component {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    height: 100%;
+    width: 350px;
+}
+
+/* Three Cards section */
+
+.three-cards {
+    margin-block: 20px;
+    /*  this margin-block is the empty space outside this parent div from top and bottom.. */
+}
+
+.first-card {
+    gap: 30px;
+
+}
+
+.first-card .pic img {
+    width: 100%;
+}
+
+.second-card {
+    gap: 30px;
+}
+
+.second-card .pic img {
+    width: 100%;
+}
+
+.third-card {
+    gap: 30px;
+}
+
+.third-card .pic img {
+    width: 100%;
+}
+
+/* Four Cards */
+
+.four-cards .upper-text {
+    text-align: center;
+}
+
+.four-cards .shadow-cards {
+    gap: 20px;
+    margin-block: 20px;
+    /* justify-content: space-evenly; */
+}
+
+.four-cards .shadow-cards a {
+    position: relative;
+    min-height: 300px;
+    width: 23%;
+}
+
+.four-cards .shadow-cards a:hover {
+    box-shadow: 1px 1px 10px rgb(167, 162, 162);
+}
+
+.four-cards .shadow-cards h3 {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 2px;
+}
+
+/* Blue area */
+
+.blue-area {
+    padding-block: 80px;
+    background-color: #183b56;
+}
+
+.blue-area .blue-area-components {
+    color: white;
+    gap: 30px;
+    flex-direction: column;
+
+}
+
+.blue-area p {
+    color: white;
+}
+
+/* Sub footer */
+
+.sub-footer {
+    background-color: #ebf2fa;
+    padding-block: 60px;
+}
+
+.sub-footer-components {
+    align-items: center;
+    justify-content: space-around
+}
+
+.sub-footer-components .footer-pic img {
+    width: 100%;
+    height: 50px;
+}
+
+
+.sub-footer .sub-footer-components .products,
+.methodologies,
+.resources {
+    font-family: serif;
+}
+
+.sub-footer-components .products ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sub-footer-components .methodologies ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sub-footer-components .resources ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* footer */
+.footer {
+    font-family: serif;
+    background-color: #b9cde4;
+    padding-block: 20px;
+}
+
+.footer .fit ul {
+    justify-content: center;
+    gap: 30px;
+}
