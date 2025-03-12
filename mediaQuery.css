@@ -151,7 +151,7 @@
     .secondary-btn {
         padding: 5px;
         font-size: 0.8rem;
-        font-weight: 700;
+        font-weight: 500;
     }
 
     .top-banner {
@@ -186,6 +186,8 @@
 
     .hero-section .hero-text .secondary-btn {
         margin-block: 10px;
+        font-weight: 500;
+        font-size: 0.9rem;
     }
 
     .company-section p {
@@ -266,9 +268,9 @@
 
     .primary-btn,
     .secondary-btn {
-        padding: 7px;
-        font-size: 1.3rem;
-        font-weight: 800;
+        padding: 5px;
+        font-size: 1.1rem;
+        font-weight:600;
     }
 
     .header {
@@ -293,6 +295,7 @@
 
     .hero-section .hero-text .secondary-btn {
         margin-block: 10px;
+        font-weight: 1.1rem;
     }
 
     .company-section p {
